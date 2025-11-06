@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 297mm;
+            width: 210mm;
+            padding:1.27cm;
+            font-size:0;
+            color: #333;
+        }
+
+        body > div {
+            display: inline-block;
+            vertical-align: top;
+            font: 10pt Helvetica, sans-serif;
+        }
+
+        div#column1 {
+            width:6cm;
+        }
+
+        div#column2 {
+            width:12cm;
+            margin-left: .45cm;
+        }
+
+        #column1 > img {
+            width: 80%;
+            padding:5%;
+            box-shadow: #777 0px 0px 20px;
+            border-radius: 20% 0 20% 0;
+        }
+
+        section {
+            margin-top: 2rem;
+        }
+
+        section h2 {
+            margin-bottom:.75rem;
+            font: 400 1.5rem Georgia, serif;
+        }
+
+        section ul {
+            list-style: none;
+        }
+
+        section ul li {
+            margin-bottom:2pt;
+        }
+
+        #column2 > section {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            row-gap: 1em;
+        }
+
+        #column2 > h1 {
+            font:italic 300 4rem Georgia,serif;
+            margin-bottom: 5rem;
+            text-align: center;
+        } 
+
+        #column2 > section > h2 {
+            grid-column: span 2;
+            text-align: center;
+            margin-bottom: 0;
+        } 
+
+        #column2 > section > time {
+            grid-column: 1;
+            text-indent: 1rem;
+        }
+
+        #column2 > section > p, #column2 > section > time {
+            border-top:1pt solid #888;
+            padding-top:4pt;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font: 10pt Helvetica, sans-serif;
+        }
+    </style>
+    <title>Daria Serysheva CV</title>
+</head>
+<body>
+    <div id="column1">
+        <img src="daria.jpg" alt="zdjęcie profilowe" srcset="">
+        <section>
+            <h2>Kontakt</h2>
+            <ul>
+                <li>E-mail: <a href="mailto:seryshevadasha2001@gmail.com">seryshevadasha2001@gmail.com</a></li>
+                <li>Telefon: +48 793 294 517</li>
+                <li>Miejscowość: Bytom, Śląskie</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Języki:</h2>
+            <ul>
+                <li>Rosyjski: ojczysty</li>
+                <li>Ukraiński: B2</li>
+                <li>Polski: B2</li>
+                <li>Niemiecki: B1</li>
+                <li>Angielski: A2</li>
+                <!-- <li>(Znajomość danych języków obcych potwierdzona za pomocą
+                świadectwa maturalnego oraz świadectwa ukończenia szkoły)</li> -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Umiejętności:</h2>
+            <ul>
+                <li>Znajomość pakietu MS Office</li>
+                <li>Photoshop, Indesign, Corel Draw</li>
+                <li>Dobra organizacja pracy i systematyczność</li>
+                <li>Dyspozycyjność</li>
+                <li>Komunikatywność</li>
+                <li>Zaangażowanie</li>
+                <li>Zdolności manualne</li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="column2">
+        <h1>Daria <br>Serysheva</h1>
+        <section>
+            <h2>Doświadczenie zawodowe</h2>
+             <time datetime="">04.2025-06.2025</time>
+            <p>Niden Service Sp. z o.o.
+            Stanowisko: Magazynier dla Moto-Profil Sp. z o.o.</p>
+
+            <time datetime="">02.2023-02.2025</time>
+            <p>International Automotive Components Sp. z o.o
+               Stanowisko: Pracownik produkcji – tapicer</p>
+
+            <time datetime="">09.2021-02.2023</time>
+            <p>Adecco Poland Sp. z o.o.
+            Stanowisko: Pracownik produkcji - tapicer w 
+            International Automotive Components Sp. z o.o.</p>
+
+            <time datetime="">06.2021-08.2021</time>
+            <p>Manpowergroup sp. z o.o.
+            Stanowisko: Pracownik produkcji w Mondelez Polska Sp. z o.o.</p>
+        </section>
+
+        <section>
+            <h2>Wykształcenie</h2>
+            <time datetime="">10.2024 - …</time>
+
+            <p>WSB Merito Chorzów
+                kierunek: informatyka(inżynierskie, niestacjonarne); przewidywalny rok ukończenia: 2028
+                </p>
+
+            <time datetime="">09.2018 - 09.2021</time>
+
+            <p>II Liceum Ogólnokształcące im.Z.Herberta w Brzegu</p>
+        </section>
+
+        <section>
+            <h2>Kursy i szkolenia</h2>
+
+            <time datetime="">10.2021</time>
+            <p>Kurs trenerski (instruktor jogi)</p>
+
+            <time datetime="">05.2017</time>
+            <p>Kurs podstaw komputerowego
+                layotu(opracowania graficznego książek, gazet, wizytówek itp.)
+            </p>
+
+            <time datetime="">05.2016</time>
+            <p>Kurs podstawowej obsługi komputera</p>
+        </section>
+    </div>
+    <footer>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</footer>
+</body>
+</html>
